@@ -12,6 +12,8 @@
 		82B45995213F2D960059CDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B45994213F2D960059CDB2 /* Assets.xcassets */; };
 		82B45998213F2D960059CDB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B45996213F2D960059CDB2 /* LaunchScreen.storyboard */; };
 		82B459A1213F2E160059CDB2 /* PetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B459A0213F2E160059CDB2 /* PetsTableViewController.swift */; };
+		82B459A3213F2F9E0059CDB2 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B459A2213F2F9E0059CDB2 /* Pet.swift */; };
+		82B459A5213F2FF00059CDB2 /* PetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B459A4213F2FF00059CDB2 /* PetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		82B45997213F2D960059CDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82B45999213F2D960059CDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82B459A0213F2E160059CDB2 /* PetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableViewController.swift; sourceTree = "<group>"; };
+		82B459A2213F2F9E0059CDB2 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		82B459A4213F2FF00059CDB2 /* PetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,9 @@
 		82B4598C213F2D940059CDB2 /* PetsWithLuis */ = {
 			isa = PBXGroup;
 			children = (
-				82B45991213F2D940059CDB2 /* Main.storyboard */,
-				82B459A0213F2E160059CDB2 /* PetsTableViewController.swift */,
+				82B459A6213F2FF50059CDB2 /* Model */,
+				82B459A7213F2FFC0059CDB2 /* Controller */,
+				82B459A8213F30020059CDB2 /* View */,
 				82B4599F213F2DBC0059CDB2 /* Supporting files */,
 			);
 			path = PetsWithLuis;
@@ -70,6 +75,31 @@
 				82B45999213F2D960059CDB2 /* Info.plist */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		82B459A6213F2FF50059CDB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82B459A2213F2F9E0059CDB2 /* Pet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82B459A7213F2FFC0059CDB2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82B459A4213F2FF00059CDB2 /* PetController.swift */,
+				82B459A0213F2E160059CDB2 /* PetsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		82B459A8213F30020059CDB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82B45991213F2D940059CDB2 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B459A3213F2F9E0059CDB2 /* Pet.swift in Sources */,
 				82B4598E213F2D940059CDB2 /* AppDelegate.swift in Sources */,
 				82B459A1213F2E160059CDB2 /* PetsTableViewController.swift in Sources */,
+				82B459A5213F2FF00059CDB2 /* PetController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK26JKU2YA;
-				INFOPLIST_FILE = PetsWithLuis/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PetsWithLuis/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK26JKU2YA;
-				INFOPLIST_FILE = PetsWithLuis/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PetsWithLuis/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
